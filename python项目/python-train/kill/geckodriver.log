@@ -1,0 +1,141 @@
+1579423137869	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/mk/jyr5t3gn0w79_dlwc15rmjpr0000gn/T/rust_mozprofile9c0fPn"
+1579423140114	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1579423140260	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1579423140260	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1579423140263	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1579423140264	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1579423142460	Marionette	INFO	Listening on port 56813
+1579423211578	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/mk/jyr5t3gn0w79_dlwc15rmjpr0000gn/T/rust_mozprofile8PESoe"
+1579423212241	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1579423212338	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1579423212339	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1579423212339	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1579423212339	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1579423214710	Marionette	INFO	Listening on port 57099
+1579423214798	Marionette	WARN	TLS certificate errors will be ignored for this session
+1579423216881	Marionette	INFO	Stopped listening on port 57099
+1579423233718	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/mk/jyr5t3gn0w79_dlwc15rmjpr0000gn/T/rust_mozprofileoAWTGB"
+1579423234268	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1579423234361	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1579423234361	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1579423234361	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1579423234361	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1579423236427	Marionette	INFO	Listening on port 57225
+1579423236513	Marionette	WARN	TLS certificate errors will be ignored for this session
+1579423243655	Marionette	INFO	Stopped listening on port 56813
+1579423250334	Marionette	INFO	Stopped listening on port 57225
+1579423251966	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/mk/jyr5t3gn0w79_dlwc15rmjpr0000gn/T/rust_mozprofilewN4xFB"
+1579423252576	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1579423252672	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1579423252673	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1579423252673	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1579423252673	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1579423254691	Marionette	INFO	Listening on port 57356
+1579423254746	Marionette	WARN	TLS certificate errors will be ignored for this session
+1579425704683	Marionette	INFO	Stopped listening on port 57356
+1579425861911	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/mk/jyr5t3gn0w79_dlwc15rmjpr0000gn/T/rust_mozprofileLCNXIW"
+1579425863874	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1579425863970	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1579425863970	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1579425863970	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1579425863972	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1579425866607	Marionette	INFO	Listening on port 56045
+1579425866623	Marionette	WARN	TLS certificate errors will be ignored for this session
+WebGL(0x156297800)::ForceLoseContext
+1579425935915	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/mk/jyr5t3gn0w79_dlwc15rmjpr0000gn/T/rust_mozprofileaJwPGV"
+1579425937098	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1579425937532	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1579425937532	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1579425937539	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1579425937539	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1579425940902	Marionette	INFO	Listening on port 56678
+1579425940972	Marionette	WARN	TLS certificate errors will be ignored for this session
+1579425943645	Marionette	INFO	Stopped listening on port 56045
+WebGL(0x14e8ad800)::ForceLoseContext
+WebGL(0x14ec1e000)::ForceLoseContext
+WebGL(0x119d42800)::ForceLoseContext
+WebGL(0x14e8a6000)::ForceLoseContext
+WebGL(0x17d09d800)::ForceLoseContext
+WebGL(0x18d616800)::ForceLoseContext
+WebGL(0x18d61c800)::ForceLoseContext
+JavaScript warning: https://g.alicdn.com/kissy/k/1.4.16/xtemplate/compiler-min.js, line 284: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/kissy/k/1.4.16/xtemplate/compiler-min.js, line 96: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2252))
+console.error: (new TypeError("container.node.targetFront is null", "resource://devtools/client/inspector/markup/markup.js", 2252))
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 196: Error: Invalid autocomplete selectedIndex
+JavaScript warning: https://csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1579428390998	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/mk/jyr5t3gn0w79_dlwc15rmjpr0000gn/T/rust_mozprofile7sM5EZ"
+1579428391736	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1579428391851	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1579428391851	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1579428391851	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1579428391851	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1579428394157	Marionette	INFO	Listening on port 56859
+1579428394190	Marionette	WARN	TLS certificate errors will be ignored for this session
+WebGL(0x12d116000)::ForceLoseContext
+WebGL(0x12b0a0000)::ForceLoseContext
+JavaScript error: https://pjhbk.tdum.alibaba.com/dss.js, line 1: ReferenceError: __um_perf_cb is not defined
+WebGL(0x107025800)::ForceLoseContext
+WebGL(0x14f2d2000)::ForceLoseContext
+WebGL(0x12d7d6800)::ForceLoseContext
+WebGL(0x14eac8000)::ForceLoseContext
+WebGL(0x14ead0000)::ForceLoseContext
+JavaScript warning: https://g.alicdn.com/kissy/k/1.4.16/xtemplate/compiler-min.js, line 284: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+JavaScript warning: https://g.alicdn.com/kissy/k/1.4.16/xtemplate/compiler-min.js, line 96: Using //@ to indicate sourceURL pragmas is deprecated. Use //# instead
+1579428578625	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/mk/jyr5t3gn0w79_dlwc15rmjpr0000gn/T/rust_mozprofile5hkHDm"
+1579428579264	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1579428579627	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1579428579627	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1579428579631	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1579428579631	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1579428582153	Marionette	INFO	Listening on port 58298
+1579428582172	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+1579428589034	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/mk/jyr5t3gn0w79_dlwc15rmjpr0000gn/T/rust_mozprofile5RGDst"
+1579428589655	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1579428589768	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1579428589768	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1579428589768	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1579428589768	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1579428591627	Marionette	INFO	Stopped listening on port 56859
+1579428592088	Marionette	INFO	Listening on port 58446
+1579428592237	Marionette	WARN	TLS certificate errors will be ignored for this session
+WebGL(0x1569d5000)::ForceLoseContext
+WebGL(0x158dcf000)::ForceLoseContext
+WebGL(0x158dcf800)::ForceLoseContext
+WebGL(0x1557c5000)::ForceLoseContext
+1579428671680	Marionette	INFO	Stopped listening on port 58446
+1579428733582	Marionette	INFO	Stopped listening on port 56678
+1579447139757	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/mk/jyr5t3gn0w79_dlwc15rmjpr0000gn/T/rust_mozprofileGjYtKh"
+1579447140910	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1579447141069	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1579447141069	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1579447141069	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1579447141069	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1579447143226	Marionette	INFO	Listening on port 61422
+1579447143280	Marionette	WARN	TLS certificate errors will be ignored for this session
+WebGL(0x13649f800)::ForceLoseContext
+WebGL(0x136491800)::ForceLoseContext
+WebGL(0x136492000)::ForceLoseContext
+WebGL(0x17564f800)::ForceLoseContext
+WebGL(0x13692a000)::ForceLoseContext
+WebGL(0x18616d000)::ForceLoseContext
+WebGL(0x15837c800)::ForceLoseContext
+WebGL(0x159391800)::ForceLoseContext
+WebGL(0x15adb6000)::ForceLoseContext
+WebGL(0x15adcc800)::ForceLoseContext
+WebGL(0x185c63000)::ForceLoseContext
+JavaScript error: resource:///actors/ContentMetaChild.jsm, line 167: InvalidStateError: An attempt was made to use an object that is not, or is no longer, usable
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.

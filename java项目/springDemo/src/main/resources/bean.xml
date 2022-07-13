@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                            http://www.springframework.org/schema/beans/spring-beans.xsd
+                            http://www.springframework.org/schema/context
+                            http://www.springframework.org/schema/context/spring-context.xsd ">
+
+
+<!--&lt;!&ndash;    上面两个是基础IOC的约束，必备&ndash;&gt;-->
+<!--    xmlns:context="http://www.springframework.org/schema/context"-->
+<!--    &lt;!&ndash;        //上面一个是开启注解管理Bean对象的约束&ndash;&gt;-->
+<!--    xmlns:aop="http://www.springframework.org/schema/aop"-->
+<!--    &lt;!&ndash;        //aop的注解约束&ndash;&gt;-->
+<!--    xmlns:tx="http://www.springframework.org/schema/tx"-->
+<!--    &lt;!&ndash;        //事务的约束&ndash;&gt;-->
+<!--    xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+<!--    http://www.springframework.org/schema/beans/spring-beans.xsd-->
+<!--    &lt;!&ndash;        //上面两个是基础IOC的约束，必备&ndash;&gt;-->
+<!--    http://www.springframework.org/schema/context-->
+<!--    http://www.springframework.org/schema/context/spring-context.xsd-->
+<!--    &lt;!&ndash;        //上面一个是开启注解管理Bean对象的约束&ndash;&gt;-->
+<!--    http://www.springframework.org/schema/aop-->
+<!--    http://www.springframework.org/schema/aop/spring-aop.xsd-->
+<!--    &lt;!&ndash;        //aop的注解约束&ndash;&gt;-->
+<!--    http://www.springframework.org/schema/tx-->
+<!--    http://www.springframework.org/schema/tx/spring-tx.xsd">-->
+<!--    &lt;!&ndash;        //事务的约束&ndash;&gt;-->
+    <!-- spring对bean的管理方式
+       1、创建Bean的三种方式
+       2、bean对象的作用范围
+       3、bean对象的生命周期-->
+
+    <!--  创建bean对象的方式
+      1、使用默认构造函数创建：bean标签只有id和class属性，且对应的javaBean存在默认构造函数-->
+
+<!--    <bean id="accountService" class="com.lij.service.impl.AccountServiceImpl"></bean>
+    <bean id="accountDao" class="com.lij.dao.impl.AccountDaoImpl"></bean>-->
+
+    <!-- 2、使用普通工厂中的方法创建对象（使用某个类中的方法创建对象，并存入spring容器）,factory-bean是指创建的对象，如果这里是一个实例，
+        那么对应的 factory-method 既可以是类的方法也可以是对象的方法，如果是一个类，那么只能是静态方法
+    <bean id="instanceFactory" class="com.lij.factory.InstanceFactory"></bean>
+    <bean id="accountService" factory-bean="instanceFactory" factory-method="getAccountService"></bean>-->
+    <!-- 3、使用工厂中的静态方法创建对象（使用某各类中的静态方法创建对象，并存入spring容器）   -->
+<!--    <bean id="accountService" class="com.lij.factory.StaticFactory" factory-method="getAccountService"></bean>-->
+
+    <!-- bean的作用范围
+       scope属性，作用：用于制定bean的作用范围
+       取值：singleton(单例模式)，
+       prototype（多例），
+       request（作用于web应用的请求范围），
+       session（作用于web应用的会话范围），
+       golbal-session（作用于集群环境的会话范围（全局会话范围），当不是集群环境时就是session）
+       -->
+
+    <!-- bean对象的生命周期
+       单例对象：出生（容器创建时对象出生），活着（容器存在对象存在），死亡（容器销毁，对象消亡）单例对象的生命周期与容器相同
+       单例对象：出生（使用对象时对象出生），活着（对象使用过程中一直存在），死亡（当对象长时间不用，且没有其他对象使用，对象消亡）
+
+       <bean id="accountService" class="com.lij.service.impl.AccountServiceImpl"
+        scope="prototype" init-method="init" destroy-method="destory"></bean>
+       -->
+
+    <!-- spring中的依赖注入
+      依赖注入：
+
+      IOC的作用：
+        降低耦合
+       依赖关系的管理：
+        以后都交给spring来维护，需要在配置文件中说明依赖关系的维护，称之为依赖注入。
+        注入数据的类型：
+            1、基本类型和String
+            2、其他bean类型（在配置文件中活着注解配置过的bean）
+            3、复杂类型/集合方式
+         注入的方式
+            1、使用构造函数的提供
+            2、使用set方法提供
+            3、使用注解提供
+     -->
+
+    <!--构造函数注入
+        使用的标签：constructor-arg
+        标签出现的位置：bean标签内部
+        标签中的属性：
+            type：要注入数据的数据类型，该数据类型也是构造函数中某个活着某些参数的数据类型
+            index：用于指定要注入的数据给构造函数中指定索引位置的参数赋值，索引的位置是从0开始的
+            name：用于指定给构造函数中指定名称的参数赋值
+            =========================   给构造函数中的参数赋值   =========================
+            value：提供基本类型和string类型数据
+            ref：其他bean类型的数据，在spring ioc核心容器中出现过的bean对象
+
+         优势：在获取bean对象时，注入数据是必须的操作，否则对象无法创建成功
+         弊端：改变了bean对象的实例化方式，创建对象时，必须全量提供参数
+
+    <bean id="accountService" class="com.lij.service.impl.AccountServiceImpl">
+        <constructor-arg name="name" value="test"></constructor-arg>
+        <constructor-arg name="age" value="18"></constructor-arg>
+        <constructor-arg name="birthDay" ref="now"></constructor-arg>
+    </bean>
+  -->
+
+    <!--  set方法注入
+      涉及的标签：properties
+      出现的位置：bean
+      标签的属性
+            name：用于指定注入时所调用的set方法名称
+            value：提供基本类型和string类型数据
+            ref：其他bean类型的数据，在spring ioc核心容器中出现过的bean对象
+
+     优势：创建对象时没有明确的限制，可以直接使用默认狗狗函数
+     弊端：如果某个成员必须有值，则获取对象时有可能为空
+
+
+    <bean id="now" class="java.util.Date"></bean>
+
+    <bean id="accountService2" class="com.lij.service.impl.AccountServiceImpl2">
+        <property name="age" value="12"></property>
+        <property name="name" value="test"></property>
+        <property name="birthDay" ref="now"></property>
+    </bean>
+     -->
+
+<!--    复杂类型的注入/ 集合类型的注入
+        用于给list结构集合注入的标签：
+            list，array，set
+         用于给map结构集合注入的标签：
+            map，props
+         结构相同，标签可以互换
+
+    <bean id="accountService3" class="com.lij.service.impl.AccountServiceImpl3">
+        <property name="myStrs" >
+            <array>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </array>
+        </property>
+
+        <property name="myList" >
+            <list>
+                <value>AAA</value>
+                <value>BBB</value>
+                <value>CCC</value>
+            </list>
+        </property>
+
+        <property name="myMap" >
+            <map>
+                <entry key="test1" value="111"> </entry>
+                <entry key="test2" >
+                    <value>222</value>
+                </entry>
+            </map>
+        </property>
+
+        <property name="prop">
+            <props >
+                <prop key="aaa"> ccc</prop>
+                <prop key="bbb">ddd</prop>
+            </props>
+        </property>
+    </bean>-->
+
+    <!--    告知spring在创建容器时要扫描的包，配置所需要的标签不实在beans的约束中，而是在一个名称为context名称空间和约束中-->
+    <context:component-scan base-package="com.lij"></context:component-scan>
+</beans>

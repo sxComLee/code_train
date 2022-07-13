@@ -1,0 +1,28 @@
+<html>
+ <body>
+  <div class="nav-items">
+   <ul>
+    <li class="item-1 active">
+     <a href="https://book.douban.com/cart/">
+      购书单
+     </a>
+    </li>
+    <li class="item-2 active">
+     <a href="https://read.douban.com/ebooks/?dcs=book-nav&amp;dcm=douban" target="_blank" >
+      电子图书
+     </a>
+    </li>
+    <li class="item-3">
+     <a href="https://market.douban.com/book?utm_campaign=book_nav_freyr&amp;utm_source=douban&amp;utm_medium=pc_web" >
+      豆瓣书店
+     </a>
+    </li>
+    <li class="item-4">
+     <a href="https://book.douban.com/annual/2019?source=navigation" target="_blank" >
+      2019年度榜单
+     </a>
+    </li>
+   </ul>
+  </div>
+ </body>
+</html>

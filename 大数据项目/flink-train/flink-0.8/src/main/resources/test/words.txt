@@ -1,0 +1,46 @@
+
+
+
+--首先创建临时表存放中间数据
+create table pfund_pfund_fund_product_period_fix like pfund_pfund_fund_product_period;
+--增加字段列
+alter table ods.pfund_pfund_fund_product_period_fix 
+	add columns(return_visit_type tinyint);
+ alter table ods.pfund_pfund_fund_product_period_fix change return_visit_type return_visit_type tinyint after deleted;
+
+--插入数据
+insert into pfund_pfund_fund_product_period_fix partition(deal_date)
+	select `(deal_date|operatetimestamp|operation_type|db_name|table_name|batch_count|order_count)?+.+`
+,'',operatetimestamp,operation_type,db_name,table_name,batch_count,order_count,deal_date from pfund_pfund_fund_product_period;
+--删除原表
+drop table pfund_pfund_fund_product_period;
+--修改表明
+alter table pfund_pfund_fund_product_period_fix rename to pfund_pfund_fund_product_period;
+
+
+
+对于dwd表的操作
+
+
+--首先创建临时表存放中间数据
+create table dwd_pfund_pfund_fund_product_period_fix like dwd_pfund_pfund_fund_product_period;
+--将数据导入到临时表中
+insert into dwd_pfund_pfund_fund_product_period_fix partition(deal_date)
+	select * from dwd_pfund_pfund_fund_product_period;
+	
+--增加字段列
+alter table dwd_pfund_pfund_fund_product_period
+	add columns(`return_visit_type`  tinyint) cascade;
+ alter table dwd_pfund_pfund_fund_product_period_fix change return_visit_type return_visit_type tinyint after deleted;
+
+ 
+--将数据再插入回来
+insert overwrite table dwd_pfund_pfund_fund_product_period partition(deal_date)
+	select `(deal_date|expired|eff_time|max_time)?+.+`
+    ,'',expired,eff_time,max_time,deal_date from dwd_pfund_pfund_fund_product_period_fix;
+--删除临时表
+drop table dwd_pfund_pfund_fund_product_period_fix;
+
+
+
+id:char,fund_code:varchar,fund_product_id:char,fund_frontend_name:varchar,contract_prefix:varchar,trade_status:tinyint,fund_status:tinyint,start_invest_amount:decimal,class_differ:decimal,max_invest_amount:decimal,append_amount:decimal,record_type:tinyint,share_type:varchar,dividend_method:varchar,is_can_modify_dividend:tinyint,contract_count:tinyint,complement_file_count:tinyint,is_docked_ta:tinyint,is_support_online:tinyint,preheating_begin_time:datetime,raised_begin_time:datetime,buy_begin_time:datetime,buy_end_time:datetime,open_period_end_time:datetime,trade_limit:decimal,collect_number:int,ascription_enterprise_id:varchar,risk_level:varchar,duration_period:varchar,closed_period:varchar,manager_name:varchar,trusteeship_name:varchar,income_type:varchar,version:int,created_user_id:varchar,modified_user_id:varchar,date_entered:datetime,date_modified:datetime,deleted:tinyint,return_visit_type:tinyint

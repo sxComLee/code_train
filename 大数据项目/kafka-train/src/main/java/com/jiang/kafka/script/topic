@@ -1,0 +1,10 @@
+#创建
+[root@fjr-off-51-24 bin]# kafka-topics --create --zookeeper slave02:2181 --topic kafka-test --partitions 3 --replication-factor 2
+Created topic "kafka-test".
+
+#详细信息
+[root@fjr-off-51-25 supdev]# kafka-topics --zookeeper slave02:2181 --describe --topic kafka-test
+Topic:kafka-test        PartitionCount:3        ReplicationFactor:2     Configs:
+        Topic: kafka-test       Partition: 0    Leader: 379     Replicas: 379,244       Isr: 379,244
+        Topic: kafka-test       Partition: 1    Leader: 244     Replicas: 244,246       Isr: 244,246
+        Topic: kafka-test       Partition: 2    Leader: 246     Replicas: 246,356       Isr: 246,356
