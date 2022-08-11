@@ -11,7 +11,8 @@ import lombok.AllArgsConstructor;
  */
 public class deadLockDemo {
     public static void main(String[] args) {
-        new MakeUp(false, "豆豆").start();
+        // new MakeUp(false, "豆豆").start();
+        new MakeUp(true, "豆豆").start();
         new MakeUp(true, "芳").start();
     }
 }
